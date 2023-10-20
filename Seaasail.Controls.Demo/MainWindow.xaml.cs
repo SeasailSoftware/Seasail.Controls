@@ -24,6 +24,14 @@ namespace Seaasail.Controls.Demo
         public MainWindow()
         {
             InitializeComponent();
+            List<object> shortticks = new List<object>();
+
+            for (int i = 0; i <= 20; i++)
+            {
+                shortticks.Add(new object());
+            }
+
+            ShoartTick.ItemsSource = shortticks;
         }
 
         private void Begin(object sender, RoutedEventArgs e)
